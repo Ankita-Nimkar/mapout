@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MAPOUTS</title>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+      integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+      integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
+      crossorigin=""
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- =================sidebar============== -->
+    <div class="sidebar">
+      <!-- sidebar-Header====== -->
+      <div class="sidebar__header">
+        <img
+          src="https://cdn3.iconfinder.com/data/icons/social-messaging-ui-color-line/254000/132-512.png"
+          alt=""
+        />
+        <h1>MapOuts</h1>
+      </div>
+      <!-- sidebar-Body======== -->
+      <div class="sidebar__body">
+        <!-- form -->
+        <form action="" class="form">
+          <!-- type -->
+          <div class="flex type">
+            <label for="type">Type</label>
+            <select class="widthIp typeIp" id="type" name="type">
+              <option value="Running">Running</option>
+              <option value="Cycling">Cycling</option>
+            </select>
+          </div>
+          <!--distance  -->
+          <div class="flex distannce">
+            <label for="distannce">Distannce</label>
+            <input
+              class="widthIp distannceIp"
+              type="text"
+              id="distannce"
+              name="distannce"
+              placeholder="km"
+            />
+          </div>
+          <!-- duration -->
+          <div class="flex duration">
+            <label for="duration">Duration</label>
+            <input
+              class="widthIp durationIp"
+              type="text"
+              id="duration"
+              name="duration"
+              placeholder="min"
+            />
+          </div>
+          <!--stepsCadence/elevGain  -->
+          <div class="flex steps">
+            <label for="steps" class="elevGain">Cadence</label>
+            <input
+              class="widthIp stepsIp"
+              type="text"
+              id="steps"
+              name="steps"
+              placeholder="step/min"
+            />
+          </div>
+          <button class="form__btn">OK</button>
+        </form>
+
+        <br />
+        <!-- list -->
+        <ul class="workout_list"></ul>
+      </div>
+    </div>
+
+    <!-- ======================Page Content-MAP==================== -->
+    <div id="map"></div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

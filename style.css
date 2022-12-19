@@ -1,0 +1,194 @@
+:root {
+  --color-brand--1: #ffb545;
+  --color-brand--2: #00c46a;
+
+  --color-dark--1: #2d3439;
+  --color-dark--2: #42484d;
+  --color-light--1: #aaa;
+  --color-light--2: #ececec;
+  --color-light--3: rgb(214, 222, 224);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  /* font-size: 62.5%; */
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 600px;
+  font-family: "Manrope", sans-serif;
+  color: var(--color-light--2);
+  font-weight: 400;
+  line-height: 1.6;
+  height: 100vh;
+  overscroll-behavior-y: none;
+
+  background-color: #0078a8;
+  /* padding: 2.5rem; */
+  display: flex;
+
+  border: 10px white solid;
+  box-sizing: border-box;
+}
+
+.sidebar {
+  min-width: 519px;
+  position: relative;
+  background-color: #0078a8;
+  overflow-y: scroll;
+}
+
+.sidebar__header {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  gap: 10px;
+  top: 0;
+  position: absolute;
+  margin: auto;
+}
+
+.sidebar img {
+  height: 30px;
+}
+.sidebar h1 {
+  color: white;
+  font-weight: 400;
+  font-size: x-large;
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 0 9px 8px 0;
+  box-shadow: none;
+}
+/* .leaflet-popup-content-wrapper:nth-child(even) {
+  border-left: 8px solid rgb(255, 0, 68);
+} */
+
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+  background: #0078a8;
+  color: white;
+}
+.leaflet-container a.leaflet-popup-close-button {
+  color: white;
+}
+
+.leaflet-container a.leaflet-popup-close-button:hover {
+  color: rgb(255, 213, 0);
+}
+
+.sidebar__body {
+  /* height: 7em; */
+  width: 90%;
+  position: absolute;
+  top: 110px;
+  left: 20px;
+}
+.form {
+  color: white;
+  display: none;
+  grid-template: 2fr 2fr /2fr 2fr;
+  background-color: #040406a8;
+  border-radius: 8px;
+  gap: 1em;
+  padding: 22px 40px;
+}
+.form__btn {
+  display: none;
+}
+.type {
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+.distannce {
+  grid-row: 1/2;
+  grid-column: 2/-1;
+}
+.duration {
+  grid-row: 2/-1;
+  grid-column: 1/2;
+}
+.steps {
+  grid-row: 2/-1;
+  grid-column: 2/-1;
+}
+.widthIp {
+  width: 74px;
+  border-radius: 2px;
+  border: none;
+  height: 22px;
+  padding: 4px;
+}
+.typeIp {
+  margin-left: 50px;
+}
+.distannceIp {
+  margin-left: 23.5px;
+}
+.durationIp {
+  margin-left: 25px;
+}
+.stepsIp {
+  margin-left: 24.7px;
+}
+.mountain-bike {
+  display: none;
+}
+
+.workout_list {
+  list-style: none;
+  display: none;
+}
+.workout_list1 {
+  height: 7em;
+  border-radius: 0px 8px 8px 0;
+  background-color: #040406a8;
+
+  color: white;
+  text-align: left;
+  padding: 8px 10px;
+  margin: 0 0 10px 0;
+  display: block;
+}
+.yellow-border {
+  border-left: 6px solid rgb(255, 204, 0);
+}
+.green-border {
+  border-left: 6px solid rgb(0 255 37);
+}
+.workout_list1 h1 {
+  margin-bottom: 10px;
+}
+.workout_list1 img {
+  gap: 5px;
+}
+.workout_icons {
+  display: flex;
+  gap: 10px;
+}
+.sport {
+  display: flex;
+  gap: 5px;
+  font-weight: 700;
+}
+.text {
+  margin-right: 11px;
+}
+.sticky {
+  position: fixed;
+
+  width: 43%;
+}
+#map {
+  height: 100%;
+  width: 100%;
+}
